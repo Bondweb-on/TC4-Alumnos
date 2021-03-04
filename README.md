@@ -1,2 +1,2 @@
 # TC4-Alumnos
-Trabajo en clase para repasar clases y métodos 
+Ejercicio de fundamentos de programación orientada a objetos.
