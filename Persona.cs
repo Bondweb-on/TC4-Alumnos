@@ -28,7 +28,7 @@ namespace TC4_Alumnos
             this.nombre = nombre;
         }
 
-        public void Presentarse()
+        public virtual void Presentarse()
         {
             Console.WriteLine("Hola, mi nombre es " + this.NombreCompleto);
         }

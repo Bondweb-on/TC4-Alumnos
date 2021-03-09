@@ -17,6 +17,10 @@ namespace TC4_Alumnos
             persona1.ColorFavorito = "Rojo";
 
             Console.WriteLine(persona1.ColorFavorito);
+
+            Alumno alumno1 = new Alumno("José", "Talamantes", 2759);
+            Console.WriteLine("Primer alumno: " + alumno1.NombreCompleto);
+            alumno1.Presentarse();
            
         }
     }
