@@ -40,7 +40,7 @@ namespace TC4_Alumnos
             List<Materia> materiasDeInteres = new List<Materia>();
             materiasDeInteres.Add(programacionI);
             materiasDeInteres.Add(inteligenciaArtificial);
-            materiasDeInteres.Add(new Materia("Sistemas Interactivos 1", 7));
+            materiasDeInteres.Add(new Materia("Sistemas Interactivos I", 7));
 
             Console.WriteLine("La materia de " + materiasDeInteres[2].nombre + " se ve en " + materiasDeInteres[2].NombreSemestre);
             Console.WriteLine("Me interesan " + materiasDeInteres.Count + " materias");
@@ -76,7 +76,16 @@ namespace TC4_Alumnos
                     break;
                 }
             }
-            
+            // Verificar si se encontró o no
+            if (materiaABorrar != null)
+            {
+                // Si se encontró 
+                materiasDeInteres.Remove(materiaABorrar);
+            }
+
+
+            Console.WriteLine("Ahora me interesan " + materiasDeInteres.Count + " materias");
+            Console.WriteLine("Primer materia ahora es: " + materiasDeInteres[0].nombre);
         }
     }
 }
